@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav{
+    display: flex;
+    padding: 20px 10%;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+.leftNavbar{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.leftNavbar p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.rightNavbar{
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+
+.rightNavbar button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* =================== Background section ================= */
+
+
+.backgorundSection {
+    background-image: url('HTML/KIDNEY-CHAIR-WITH-ADJUSTABLE-HANDLES.jpg');
+    background-size: cover;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.backgorundSection div{
+    text-align: center;
+}
+
+.backgorundSection div h2{
+    font-size: 60px;
+}
+
+.backgorundSection p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.backgorundSection button{
+    font-size: 15px;
+    padding: 15px 70px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.backgorundSection button:hover{
+    background-color: orange;
+    color: white;
+    transition: all 0.5s ease;
+    transform: scale(0.9);
+}

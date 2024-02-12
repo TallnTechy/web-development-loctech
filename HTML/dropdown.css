@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.firstdiv{
+    padding: 20px;
+    position: relative;
+}
+
+.firstdiv p{
+    position:absolute;
+    top: 10px;
+    left: 30px;
+    background-color: orange;
+    border-radius: 50%;
+    padding: 3px 8px;
+}
+
+.firstdiv div i{
+    font-size: 30px;
+}
+
+.borderClass{
+    padding: 30px;
+}
+
+.span{
+    border-right: 1;
+}

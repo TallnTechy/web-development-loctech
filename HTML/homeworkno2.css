@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    background-color: #13131d;
+}
+
+/* ============== Navbar ================= */
+
+nav{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 20px 7%;
+    border-bottom: 1px solid rgb(62, 61, 72);
+    position: fixed;
+    width: 100%;
+    background-color: #13131d;
+}
+
+.divOne{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.logo{
+    color: rgb(171, 133, 205);
+    font-size: 25px;
+    border-right: solid 1px gray;
+    padding-right: 30px;
+}
+
+.divOne ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.divOne ul li{
+    list-style: none;
+}
+
+.showDiv div{
+    display: none;
+}
+
+.divTwo{
+    display: flex;
+    margin-left: auto;
+    gap: 35px;
+    align-items: center;
+    
+}
+
+.searchDiv{
+    position: relative;
+}
+
+.searchDiv p{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+.divTwo input{
+    background-color: #13131d;
+    padding: 10px 10px;
+    padding-right: 50px;
+    color: white;
+    border: solid 1px gray;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.divTwo button{
+    background-color: #0d6efd;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    border-radius:10px ;
+}
+
+.divTwo .fa-solid{
+    font-size: 20px;
+}
+
+
+.notficationDiv{
+    position: relative;
+}
+
+.notficationDiv span{
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 10px;
+}
+
+
+
+/* =================== Section One ===================== */
+
+.sectionOne{
+    padding: 160px 7%;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sectionOneLeft{
+    width: 100%;
+}
+
+.sectionOneLeft h2{
+    font-size: 50px;
+    color: white;
+}
+
+
+.sectionOneLeft p {
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.sectionOneLeft div{
+    display: flex;
+    gap: 20px;
+}
+
+
+.sectionOneLeft button{
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    color: white;
+}
+
+#fistBtn{
+    background-color: #0d6efd;
+    cursor: pointer;
+}
+
+
+#fistBtn:hover{
+    background-color: #04357e;
+    transition: all ease 0.5s;
+}
+
+
+#secondBtn{
+    background-color: #04357e;
+    cursor: pointer;
+}
+
+#secondBtn:hover{
+    background-color: #0d6efd;
+    transition: all ease 0.5s;
+
+}
+
+.sectionOneRight{
+    width: 100%;
+    margin-left: auto;
+}
+
+.sectionOneRight img{
+    width: 80%;
+}
+
+
+
+/* ======================== Section Two =================== */
+
+.sectionTwo{
+    padding: 30px 7%;
+    color: white;
+}
+
+.sectionTwoFirstDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sectionTwoFirstDiv div{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.sectionTwoFirstDiv div .fa-solid{
+    background-color: #04357e;
+    font-size: 16px;
+    padding: 13px 20px;
+    color: skyblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .sectionTwoFirstDiv div button{
+    background-color: #04357e;
+    font-size: 16px;
+    padding: 13px 20px;
+    color: skyblue;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+} */
+
+.sectionTwoFirstDiv div .fa-solid:hover{
+    background-color: #0d6efd;
+    transition: all ease 0.5s;
+}
+
+
+/* .sectionTwoFirstDiv div button:hover{
+    background-color: #0d6efd;
+    transition: all ease 0.5s;
+} */
+
+
+/* ================= animation ================= */
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+  }
+  .loader::after {
+    animation-delay: 1s;
+  }
+  
+  @keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+
+  /* =========== card ==================== */
+    .genCardDiv{
+        display: flex;
+        padding-top: 30px;
+        gap: 30px;
+    }
+    .card{
+        background-color: #242435;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .card:hover{
+        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    }
+
+    .card img{
+        border-radius: 10px;
+        width: 250px;
+    }
+
+    .cardOneDiv{
+        padding: 10px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .cardOneDiv img{
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .cardOneDiv .fa-solid {
+        margin-left: auto;
+    }
